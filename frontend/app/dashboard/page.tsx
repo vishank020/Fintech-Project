@@ -4,7 +4,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Progress } from "@/components/ui/progress"
 import { Badge } from "@/components/ui/badge"
-import Link from "next/link"
 import {
   Target,
   TrendingUp,
@@ -77,14 +76,14 @@ export default function Dashboard() {
       <div className="flex">
         {/* Sidebar */}
         <aside className="w-64 bg-card border-r border-border min-h-screen p-6">
-          <Link href='/' className="flex items-center gap-2 mb-8">  {/* Logo to homepage */}
+          <link href='/' className="flex items-center gap-2 mb-8">  {/* Logo to homepage */}
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <TrendingUp className="w-5 h-5 text-primary-foreground" />
               </div>
               <span className="text-xl font-poppins font-semibold text-foreground">FinCoach AI</span>
             </div>
-          </Link>
+          </link>
 
           <nav className="space-y-2">
             {sidebarItems.map((item, index) => (
